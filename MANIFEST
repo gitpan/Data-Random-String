@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Data-Random-String.t
+lib/Data/Random/String.pm
