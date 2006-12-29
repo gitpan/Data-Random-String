@@ -12,7 +12,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 @EXPORT_OK   = qw(&create_random_string);
 %EXPORT_TAGS = ( DEFAULT => [qw(&create_random_string)]);
 
-$VERSION = '0.0.1';
+$VERSION = '0.01';
 
 
 sub create_random_string
@@ -90,6 +90,8 @@ when calling it.
 
 There are two optional parameters as follows:
 
+=over
+
 =item C<< legth >> 
 Used to specify the exact length of the generated string in characters. The default length is 32 characters if no other value is given.
 
@@ -99,7 +101,7 @@ string.
 
 The choices are alpha ([a-z,A-Z]), numeric ([0-9]) and alphanumeric ([a-z,A-Z,0-9]).
 
-=cut
+=back
 
 =head1 BUGS AND LIMITATIONS
 

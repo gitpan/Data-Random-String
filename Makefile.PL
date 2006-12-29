@@ -1,12 +1,16 @@
-use 5.008008;
+use strict;
+use warnings;
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+
 WriteMakefile(
-    NAME              => 'Data::Random::String',
-    VERSION_FROM      => 'lib/Data/Random/String.pm', # finds $VERSION
-    PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM  => 'lib/Data/Random/String.pm', # retrieve abstract from module
-       AUTHOR         => 'root <root@marmaridis.org>') : ()),
+    NAME                => 'Data::Random::String',
+    AUTHOR              => 'Ioakim (Makis) Marmaridis <m.marmaridis@gmail.com>',
+    VERSION_FROM        => 'lib/Data/Random/String.pm',
+    ABSTRACT_FROM       => 'lib/Data/Random/String.pm',
+    PL_FILES            => {},
+    PREREQ_PM => {
+        'Test::More' => 0,
+    },
+    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
+    clean               => { FILES => 'Data-Random-String-*' },
 );
