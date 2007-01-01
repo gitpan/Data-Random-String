@@ -12,7 +12,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 @EXPORT_OK   = qw(&create_random_string);
 %EXPORT_TAGS = ( DEFAULT => [qw(&create_random_string)]);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 
 sub create_random_string
@@ -77,7 +77,7 @@ Data::Random::String - Perl extension for creating random strings
 =head1 DESCRIPTION
 
 Data::Random::String provides a simple interface for generating random
-strings that contain numeric, alph or alphnumeric characters.
+strings that contain numeric, alpha or alphanumeric characters.
 
 =head1 CREATING A RANDOM STRING
 

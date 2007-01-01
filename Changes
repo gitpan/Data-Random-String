@@ -1,5 +1,8 @@
 Revision history for Perl extension Data::Random::String.
 
+0.02  Mon Jan 1 11:08:00 2007
+	   - Pod documentation updates in String.pm
+
 0.01  Thu Dec 28 15:43:52 2006
        - Initial release.
 
