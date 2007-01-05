@@ -1,6 +1,5 @@
 package Data::Random::String;
 
-use 5.008008;
 use strict;
 use warnings;
 use Exporter;
@@ -12,7 +11,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS);
 @EXPORT_OK   = qw(&create_random_string);
 %EXPORT_TAGS = ( DEFAULT => [qw(&create_random_string)]);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 
 sub create_random_string
